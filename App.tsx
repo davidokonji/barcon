@@ -1,19 +1,23 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import {View} from 'react-native';
+import RootNav from './src/navigation/RootNavigation';
+
+console.disableYellowBox = true;
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#ffffff',
+      }}>
+        <SafeAreaProvider>
+          <NavigationContainer>
+            <RootNav />
+          </NavigationContainer>
+        </SafeAreaProvider>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
