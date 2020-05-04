@@ -1,6 +1,8 @@
 # BarCon App
 A very basic implementation of react native expo contact API and Barcode scanner API
 
+**Testing the published app 🚀** [barcon app](exp://exp.host/@devlen/barcon)
+
 ---
 > ### Welcome Screen
 ![Simulator Screen Shot - iPhone X - 2020-05-03 at 01 11 09](https://user-images.githubusercontent.com/30610099/80895410-74e3c780-8cdc-11ea-8204-40563e9ceb9f.png)
